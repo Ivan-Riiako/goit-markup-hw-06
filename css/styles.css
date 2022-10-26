@@ -973,10 +973,11 @@ right: 8px;
 .form{
     display: flex;
     flex-direction: column;
+    
 }
 
 
 .modal-sudomit{
-    background: #212121;
+    color:orange;
 }
  /* --/-MODALL--  */
