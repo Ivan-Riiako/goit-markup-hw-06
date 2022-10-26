@@ -401,28 +401,28 @@
         </button>
 
         <!-- form -->
-        <form>
+        <form class="form">
           <p class="form-header">Залиште свої дані, ми вам передзвонимо</p>
-          <label>
-            Ім'я
-            <input type="text" name="username" autofocus placeholder="Jacob Mercer" />
-          </label>
-          <label>
-  Телефон
-  <input type="text" name="username" autofocus placeholder="Jacob Mercer" />
-</label>
-<label>
-  Пошта
-  <input type="text" name="username2" autofocus placeholder="Jacob Mercer" />
-</label>
-<label>
-  Ім'я
-  <input type="text" name="username3" autofocus placeholder="Jacob Mercer" />
-</label>
-<label> 
+      <label for="data-name">Ім'я</label>
+  <input type="text" name="username" id="data-name" autofocus placeholder="Jacob Mercer" />
+          
+      <label for="data-tell">Телефон</label>
+  <input  type="text" name="username" id="data-tell" autofocus placeholder="Jacob Mercer" />
+
+      <label for="data-mall"> Пошта</label>
+  <input type="text" name="username2"  id="data-mall" autofocus placeholder="Jacob Mercer" />
 
 
-          <button type="submit">Отослать</button>
+      <label for="data-feedback">Коментар</label>
+  <textarea  name="feedback" rows="8" id="data-feedback" placeholder="Введіть текст"></textarea>
+  
+<input id="newsletter" type="checkbox" name="newsletter" value="l">
+<label for="newsletter">Погоджуюся з розсилкою та приймаю <a href="http://">Умови договору</a> </label>
+      
+      
+   
+
+          <button type="submit" class="modal-sudomit">Отослать</button>
         </form>
       </div>
     </div>

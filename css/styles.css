@@ -930,7 +930,7 @@ left: 50%;
 
 width: 528px;
 height: 581px;
-padding: 8px;
+padding: 40px;
 
 background: #FFFFFF;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -970,4 +970,13 @@ right: 8px;
     letter-spacing: 0.03em;
 }
 
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.modal-sudomit{
+    background: #212121;
+}
  /* --/-MODALL--  */
