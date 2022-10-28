@@ -1112,3 +1112,51 @@ cursor: pointer;
     background: var(--button-active-color);
 }
  /* --/-MODALL--  */
+.subscription {
+    margin-left: 70px;
+}
+ .subscription strong{
+    display: inline-block;
+    margin-bottom: 20px;
+
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+ }
+
+
+ .modal-sudomit-subscription {
+display: flex;
+justify-content: center;
+align-items: center;
+
+     font-weight: 700;
+     font-size: 16px;
+     line-height: 1.87;
+     text-align: center;
+     letter-spacing: 0.06em;
+     color: #FFFFFF;
+
+     padding-top: 10px;
+     padding-bottom: 10px;
+     padding-left: 28px;
+     padding-right: 28px;
+
+
+     background: var(--button-color);
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+     border-radius: 4px;
+     border: none;
+     cursor: pointer;
+ }
+.modal-sudomit-subscription svg{
+    margin-left: 10px;
+}
+ .modal-sudomit:hover,
+ .modal-sudomit:focus {
+     background: var(--button-active-color);
+ }
