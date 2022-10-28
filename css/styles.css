@@ -968,16 +968,119 @@ right: 8px;
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 12px;
 }
 
 .form{
-    display: flex;
-    flex-direction: column;
+display: flex;
+flex-direction: column;
+
     
 }
 
 
+
+  
+.label{
+margin-bottom: 4px;
+
+font-weight: 400;
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.01em;
+color: #757575;
+}
+
+.label-checkbox{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+
+    color: #757575;
+}
+
+.label-checkbox>a{
+font-weight: 400;
+font-size: 14px;
+line-height: 1.5;
+letter-spacing: 0.03em;
+text-decoration-line: underline;
+
+color: #2196F3;
+}
+
+
+.field{
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+
+padding-top: 12px;
+padding-bottom: 12px;
+padding-left: 42px;
+padding-right: 12px;
+margin-bottom: 10px;
+}
+.textarea{
+    /* height: 120px; */
+ margin-bottom: 0;
+
+padding-top: 12px;
+padding-bottom: 12px;
+padding-left: 16px;
+padding-right: 16px;
+
+
+}
+
+
+.form>.field:hover , .form>.field:focus{
+    
+    border: 1px solid #2196F3;
+    border-radius: 4px ;
+
+    cursor: pointer;
+}
+
+field:active{
+    box-shadow: none;
+}
+
+
+.checkbox{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: ;
+    
+}
+
+
+
+
 .modal-sudomit{
-    color:orange;
+align-items: center;
+
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+text-align: center;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+
+padding-top: 10px ;
+padding-bottom: 10px;
+padding-left: 52px;
+padding-right: 52px;
+
+
+background: var(--button-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border: none;
+cursor: pointer;
+}
+.modal-sudomit:hover , .modal-sudomit:focus{
+    background: var(--button-active-color);
 }
  /* --/-MODALL--  */

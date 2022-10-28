@@ -402,29 +402,30 @@
 
         <!-- form -->
         <form class="form">
-          <p class="form-header">Залиште свої дані, ми вам передзвонимо</p>
-          <label for="data-name">Ім'я</label>
-          <input type="text" name="username" id="data-name"placeholder="Фулстек Огурцов"  />
+          <strong class="form-header" >Залиште свої дані, ми вам передзвонимо</strong>
+          <label for="data-name" class="label">Ім'я</label>
+          <input type="text" name="username" id="data-name"placeholder="Фулстек Огурцов" class="field" />
 
-          <label for="data-tell">Телефон</label>
-          <input type="tel" name="username2" id="data-tell" placeholder="1234567890" />
+          <label for="data-tell" class="label">Телефон</label>
+          <input type="tel" name="username2" id="data-tell" placeholder="1234567890" class="field"/>
 
-          <label for="data-mall"> Пошта</label>
-          <input type="email" name="username3" id="data-mall" placeholder="olen@gimaill" />
+          <label for="data-mall" class="label"> Пошта</label>
+          <input type="email" name="username3" id="data-mall" placeholder="olen@gimaill"class="field" />
 
-          <label for="data-feedback">Коментар</label>
+          <label for="data-feedback" class="label">Коментар</label>
           <textarea
             name="feedback"
-            rows="8"
+            rows="5"
             id="data-feedback"
             placeholder="Введіть текст"
+            class="field textarea"
           ></textarea>
-
-          <input id="newsletter" type="checkbox" name="newsletter" value="l" />
-          <label for="newsletter"
-            >Погоджуюся з розсилкою та приймаю <a href="http://">Умови договору</a>
+<div class="checkbox">
+          <input id="newsletter" type="checkbox" name="newsletter" value="l" class="imput-chexkbox" />
+          <label for="newsletter"  class="label-checkbox">Погоджуюся з розсилкою та приймаю
+             <a href="http://" >Умови договору</a>
           </label>
-
+</div>
           <button type="submit" class="modal-sudomit">Отослать</button>
         </form>
       </div>
