@@ -1009,9 +1009,11 @@ fill: #212121;
 }
 
 .field{
+width: 100%;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
-width: 100%;
+outline: none;
+
 
 padding-top: 12px;
 padding-bottom: 12px;
