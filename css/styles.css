@@ -1057,9 +1057,7 @@ color: rgba(117, 117, 117, 0.5);
     fill: var(--link-active);
 }
 .field:hover , .field:focus  {
-    
     border:1px solid  #2196F3;
-    fill: var(--link-active);
 }
 
 
