@@ -1010,6 +1010,14 @@ text-decoration-line: underline;
 color: #2196F3;
 }
 
+.wraper-field{
+    position: relative;
+}
+
+.icon-field {
+    position: absolute;
+    fill: inherit;
+}
 
 .field{
 border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1043,6 +1051,8 @@ padding-right: 16px;
 
     cursor: pointer;
 }
+
+
 
 
 
