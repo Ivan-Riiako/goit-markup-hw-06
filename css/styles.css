@@ -466,10 +466,10 @@ letter-spacing: 0.06em;
 color: var(--button-text-color);
 
 cursor: pointer;
-
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button:hovere{
+.button:hover{
     background-color: var(--button-active-color)
 }
 
@@ -1019,6 +1019,7 @@ border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 outline: none;
 cursor: pointer;
+font-size: 14px;
 
 padding-top: 12px;
 padding-bottom: 12px;
@@ -1029,6 +1030,7 @@ padding-right: 12px;
 transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),fill 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .textarea{
+    display: block;
 margin-bottom: 0;
 resize: none;
 
