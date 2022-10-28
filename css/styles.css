@@ -960,9 +960,12 @@ right: 8px;
     cursor: pointer;
 }
 
+.form{
+    
+}
 .form-header{
-    display: inline-block;
-    text-align: center;
+    display: block;
+
 
     font-weight: 700;
     font-size: 20px;
@@ -981,25 +984,6 @@ font-size: 12px;
 line-height: 1.16;
 letter-spacing: 0.01em;
 color: #757575;
-}
-
-.label-checkbox{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
-
-    color: #757575;
-}
-
-.label-checkbox>a{
-font-weight: 400;
-font-size: 14px;
-line-height: 1.5;
-letter-spacing: 0.03em;
-text-decoration-line: underline;
-
-color: #2196F3;
 }
 
 .wraper-field{
@@ -1021,7 +1005,7 @@ align-items: center;
 background-size: cover;
 
 transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-fill: black;
+fill: #212121;
 }
 
 .field{
@@ -1038,16 +1022,24 @@ padding-right: 12px;
 transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .textarea{
-    /* height: 120px; */
- margin-bottom: 0;
+margin-bottom: 0;
+resize: none;
 
 padding-top: 12px;
 padding-bottom: 12px;
 padding-left: 16px;
 padding-right: 16px;
 
-
 }
+
+.textarea::placeholder{
+font-weight: 400;
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.01em;
+color: rgba(117, 117, 117, 0.5);
+}
+
 
 .field:hover + .icon-field,
 .field:focus + .icon-field{
@@ -1065,10 +1057,30 @@ padding-right: 16px;
 
 .checkbox{
     display: flex;
+    justify-content: center;
+    text-align: center;
+
     margin-top: 20px;
     margin-bottom: 30px;
-   
     
+}
+.label-checkbox {
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+
+    color: #757575;
+}
+.label-checkbox>a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+
+    color: #2196F3;
 }
 
 .modal-sudomit{
