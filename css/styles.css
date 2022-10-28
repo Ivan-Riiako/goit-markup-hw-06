@@ -818,6 +818,7 @@ width: calc((100%/6)-(5*var(--space-card)));
 .footer-list {
     display: flex;
     flex-direction: column;
+min-width:fit-content;
 }
 
 
@@ -839,11 +840,13 @@ font-family: 'Raleway';
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--logo-studio-lower);
 }
-
+.footer-addres{
+    padding-right: 25px;
+}
 .adress-list{
-    display: block;
-    margin-bottom: 9px;
-   height: 21px;
+display: block;
+margin-bottom: 9px;
+height: 21px;
     
     
 }
@@ -958,11 +961,13 @@ right: 8px;
     align-items: center;
     background-color: inherit;
     cursor: pointer;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close:focus,.close:hover{
+    fill:var(--link-active)
 }
 
-.form{
-    
-}
 .form-header{
     display: block;
 
@@ -1013,7 +1018,7 @@ width: 100%;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 outline: none;
-
+cursor: pointer;
 
 padding-top: 12px;
 padding-bottom: 12px;
@@ -1021,7 +1026,7 @@ padding-left: 42px;
 padding-right: 12px;
 
 
-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),fill 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .textarea{
 margin-bottom: 0;
@@ -1043,16 +1048,15 @@ color: rgba(117, 117, 117, 0.5);
 }
 
 
+
+
 .field:hover + .icon-field,
 .field:focus + .icon-field{
     fill: var(--link-active);
 }
-.field:hover , .field:focus , .field:active {
+.field:hover , .field:focus  {
     
-    border: 1px solid #2196F3;
-    border-radius: 4px ;
-
-    cursor: pointer;
+    border:1px solid  #2196F3;
     fill: var(--link-active);
 }
 
@@ -1065,6 +1069,10 @@ color: rgba(117, 117, 117, 0.5);
     margin-top: 20px;
     margin-bottom: 30px;
     
+}
+.imput-chexkbox{
+    outline: none;
+    margin-right: 7px;
 }
 .label-checkbox {
     align-items: center;
@@ -1085,10 +1093,12 @@ color: rgba(117, 117, 117, 0.5);
     color: #2196F3;
 }
 
-.modal-sudomit{
+.modal-submit{
     display: block;
     margin-left: auto;
     margin-right: auto;
+
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 font-weight: 700;
@@ -1110,16 +1120,24 @@ border-radius: 4px;
 border: none;
 cursor: pointer;
 }
-.modal-sudomit:hover , .modal-sudomit:focus{
+.modal-submit:hover , .modal-submit:focus{
     background: var(--button-active-color);
 }
  /* --/-MODALL--  */
+
+ /* Subscription */
 .subscription {
-    margin-left: 70px;
+    width: 100%;
+    margin-left: 93px;
+
 }
+
+
+
  .subscription strong{
-    display: inline-block;
-    margin-bottom: 20px;
+
+display: inline-block;
+margin-bottom: 20px;
 
 font-weight: 700;
 font-size: 14px;
@@ -1128,13 +1146,43 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 
 color: #FFFFFF;
- }
+}
 
 
- .modal-sudomit-subscription {
+.wraper-subscrip{
+    display: flex;
+    
+}
+
+ .field-subscription{
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: #2F303A;
+    color: rgba(255, 255, 255, 0.6);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: none;
+    
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+}
+.field-subscription::placeholder{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+ .submit-subscription {
 display: flex;
 justify-content: center;
 align-items: center;
+margin-left: 12px;
 
      font-weight: 700;
      font-size: 16px;
@@ -1148,17 +1196,19 @@ align-items: center;
      padding-left: 28px;
      padding-right: 28px;
 
-
+    
      background: var(--button-color);
      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
      border-radius: 4px;
      border: none;
      cursor: pointer;
+
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
-.modal-sudomit-subscription svg{
+.submit-subscription svg{
     margin-left: 10px;
 }
- .modal-sudomit:hover,
- .modal-sudomit:focus {
+ .submit-subscription:hover,
+ .submit-subscription:focus {
      background: var(--button-active-color);
  }
