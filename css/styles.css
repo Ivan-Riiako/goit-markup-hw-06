@@ -1076,6 +1076,7 @@ color: rgba(117, 117, 117, 0.5);
 }
 .imput-checkbox:hover .label-checkbox::before{
 outline: 1px solid blue;
+background-color: var(--link-active);
 }
 .label-checkbox::before{
 height: 16px;
@@ -1086,14 +1087,28 @@ width: 16px;
    
     content: "";
     display: block;
-    height: 20px;
-        width: 26px;
-        border-radius: 2px;
-        border-color: #000000;
-        background-color: #fff;
-        right: 5px;
+    height: 16px;
+    width: 16px;
+    margin-right: 7px;
+    border-radius: 2px;
+       
+        
+        border: 2px solid #000000;
+        cursor: pointer;
+       
+        background-image: url(/images/checkbox.svg) ;
+        background-repeat: no-repeat;
+        background-size: content;
+        margin-right: 7px;
 }
+.imput-checkbox:checked + .label-checkbox::before{
+background-color: var(--link-active);
+border: 2px solid var(--link-active);
+}
+
 .label-checkbox {
+    display: flex;
+
     align-items: center;
     font-weight: 400;
     font-size: 14px;
