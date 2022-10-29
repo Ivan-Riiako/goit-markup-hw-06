@@ -932,7 +932,7 @@ top: 50%;
 left: 50%;
 
 width: 528px;
-height: 581px;
+
 padding: 40px;
 
 background-color: #FFFFFF;
@@ -1070,9 +1070,27 @@ color: rgba(117, 117, 117, 0.5);
     margin-bottom: 30px;
     
 }
-.imput-chexkbox{
+.imput-checkbox{
     outline: none;
-    margin-right: 7px;
+    
+}
+.imput-checkbox:hover .label-checkbox::before{
+outline: 1px solid blue;
+}
+.label-checkbox::before{
+height: 16px;
+width: 16px;
+    border-radius: 2px;
+}
+.label-checkbox::before{
+   
+    content: "";
+    display: block;
+    height: 15px;
+        width: 16px;
+        border-radius: 2px;
+        border-color: #000000;
+        right: 5px;
 }
 .label-checkbox {
     align-items: center;
