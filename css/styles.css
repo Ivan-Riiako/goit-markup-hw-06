@@ -1086,10 +1086,11 @@ width: 16px;
    
     content: "";
     display: block;
-    height: 15px;
-        width: 16px;
+    height: 20px;
+        width: 26px;
         border-radius: 2px;
         border-color: #000000;
+        background-color: #fff;
         right: 5px;
 }
 .label-checkbox {
