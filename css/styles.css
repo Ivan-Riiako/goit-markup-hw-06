@@ -1095,6 +1095,7 @@ cursor: pointer;
 background-color: var(--link-active);
 border: 2px solid var(--link-active);
 }
+
 .imput-checkbox:focus+.label-checkbox::before{
 border: 2px solid var(--link-active);
 }
